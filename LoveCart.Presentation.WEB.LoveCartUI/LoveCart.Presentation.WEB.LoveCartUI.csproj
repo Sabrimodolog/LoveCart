@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LoveCart.Library.Business\LoveCart.Library.Business.csproj" />
+    <ProjectReference Include="..\LoveCart.Library.DataAccess\LoveCart.Library.DataAccess.csproj" />
+    <ProjectReference Include="..\LoveCart.Library.Entities\LoveCart.Library.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
