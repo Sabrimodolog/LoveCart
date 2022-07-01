@@ -17,10 +17,10 @@ namespace LoveCart.Presentation.WEB.LoveCartUI.Controllers
             _cartTitleService = cartTitleService;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int id=1)
         {
-            //var data =await _cartTitleService.GetCartTitleAsync();
-            return View();
+            var data = await _cartTitleService.GetCartTitleAsync(id);
+            return View(data);
         }
 
         public IActionResult Privacy()
